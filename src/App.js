@@ -4,6 +4,7 @@ import "./App.css";
 import Header from './Header'
 import Login from './Login'
 import Home from './Home'
+import TestingWebServices from './TestingWebServices';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
     <Router>
       <div className="App">
         <div className="hard-margin"/>
+        
       <Header/>
+      <TestingWebServices/>
        <Switch>
          <Route path="/checkout">
             <h1>Checkout</h1>
