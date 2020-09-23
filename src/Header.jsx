@@ -25,7 +25,7 @@ function Header() {
                     <div className="desktop-navContent" data-reactid="19">
                         <div className="desktop-navLink" data-reactid="20"><a href="/shop/men" data-index="0"
                                 data-group="men" data-color="#ee5f73" data-type="navElements"
-                                style={{borderBottomcolor:"#ee5f73"}} className="desktop-main" data-reactid="21">Men</a>
+                                style={{borderBottomcolor:"#ee5f73"}} className="desktop-main" data-reactid="21">Gents</a>
                             <div className="desktop-backdropStyle" data-reactid="22">
                                 <div className="desktop-paneContent" data-reactid="23">
                                     <div className="desktop-categoryContainer" data-index="0" data-group="men"
