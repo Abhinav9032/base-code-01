@@ -1,9 +1,9 @@
 import React from "react";
 import {BrowserRouter as Router , Switch , Route} from 'react-router-dom'
 import "./App.css";
-import Header from './Header'
+import Navbar from './Navbar'
 import Login from './Login'
-import Home from './Home'
+import Carousel from './Carousel'
 import TestingWebServices from './TestingWebServices';
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
    
     <Router>
       <div className="App">
-        <div className="hard-margin"/>
-        
-      <Header/>
-      <TestingWebServices/>
+
+    <Navbar/>
+  
+      
        <Switch>
          <Route path="/checkout">
             <h1>Checkout</h1>
@@ -23,7 +23,7 @@ function App() {
             <Login/>
          </Route>
          <Route path="/">
-            <Home/>
+           <Carousel/>
          </Route>
        </Switch>
      

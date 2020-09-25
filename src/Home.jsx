@@ -1,12 +1,12 @@
 import React from 'react'
 import './Home.css'
-import bannerimage1 from './sareeBanner3.jpg';
+
 
 function Home() {
     return (
         <div className="home_banner">
             <img 
-            src={bannerimage1}
+            src="https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/Screenshot+2020-09-21+at+6.13.07+PM.png"
             className="banner_image"
             alt="Banner"
             />

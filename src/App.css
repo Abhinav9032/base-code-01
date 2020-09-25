@@ -5,3 +5,61 @@
 .hard-margin{
   margin-top:5em;
 }
+
+.logo-thea{
+  height:40px;
+}
+hr{
+  margin:0 !important;
+  border: 0;
+ border-top: 1px solid rgba(0,0,0,1);
+}
+
+.wish-list{
+  margin-left: 27%;
+
+}
+
+#search-wrapper{
+  width:550px;
+}
+
+#search-box{
+  width:490px;
+}
+
+
+#dropdown-container{
+  margin-top:12px;
+}
+
+#dropdown-button{
+  border-radius:0;
+}
+
+.carousel-container-wide{
+ width:80%;
+  margin-left:10%;
+}
+
+
+
+#carousel-text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+padding-right: 10px;
+}
+
+
+@media screen and (max-width: 600px){
+  .carousel-container-wide{
+    width: auto;
+    margin-top: 21%;
+    margin-left:0;
+   }
+   
+
+}
