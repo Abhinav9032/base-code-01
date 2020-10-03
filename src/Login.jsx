@@ -1,53 +1,46 @@
 import React from "react";
-import './Login.css';
-
-
+import "./Login.css";
 
 function showLogin() {
-    document.getElementById("login-component-container").style.display = "flex";
-    document.getElementById("forgot-password-component").style.display = "none";
-    document.getElementById("signup-component-container").style.display = "none";
-  
-};
-
+  document.getElementById("login-component-container").style.display = "flex";
+  document.getElementById("forgot-password-component").style.display = "none";
+  document.getElementById("signup-component-container").style.display = "none";
+}
 
 function showSignUp() {
-
-    document.getElementById("login-component-container").style.display = "none";
-    document.getElementById("forgot-password-component").style.display = "none";
-    document.getElementById("signup-component-container").style.display = "flex";
-    
+  document.getElementById("login-component-container").style.display = "none";
+  document.getElementById("forgot-password-component").style.display = "none";
+  document.getElementById("signup-component-container").style.display = "flex";
 }
 
 function showForgotPassword() {
-
-    document.getElementById("login-component-container").style.display = "none";
-    document.getElementById("forgot-password-component").style.display = "flex";
-    document.getElementById("signup-component-container").style.display = "none";
+  document.getElementById("login-component-container").style.display = "none";
+  document.getElementById("forgot-password-component").style.display = "flex";
+  document.getElementById("signup-component-container").style.display = "none";
 }
 
 function inputChanged(event) {
-   console.log('a') 
+  console.log("a");
 }
 
-function validateEmail(inputEmailOrPhone,event) {
-    console.log('Event' , event);
-    console.log('Input Event' ,inputEmailOrPhone);
-    
-    var mailFormat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})|([0-9]{10})+$/;
-    if (inputEmailOrPhone == "") {
-        console.log( "  Please enter your Email or Phone Number  ");
-        event.preventDefault();
-        return false;
-    }
-    else if (!mailFormat.test(inputEmailOrPhone)) {
-        console.log( "  Email Address / Phone number is not valid, Please provide a valid Email or phone number ");
-        event.preventDefault();
-        return false;
-    }
-    else {
-        console.log(" Success ");
-    }
+function validateEmail(inputEmailOrPhone, event) {
+  console.log("Event", event);
+  console.log("Input Event", inputEmailOrPhone);
+
+  var mailFormat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})|([0-9]{10})+$/;
+  if (inputEmailOrPhone == "") {
+    console.log("  Please enter your Email or Phone Number  ");
+    event.preventDefault();
+    return false;
+  } else if (!mailFormat.test(inputEmailOrPhone)) {
+    console.log(
+      "  Email Address / Phone number is not valid, Please provide a valid Email or phone number "
+    );
+    event.preventDefault();
+    return false;
+  } else {
+    console.log(" Success ");
+  }
 }
 function Login() {
   return (
@@ -59,11 +52,13 @@ function Login() {
             id="signup-component-container"
           >
             <div className="css-1x9jn5u">
-              <div className="css-3wr1ll" >
+              <div className="css-3wr1ll">
                 <h2 className="css-1n90z8d">
                   Get ready for an amazing shopping experience
                 </h2>
-                <h5 className="css-czik8g">Sign up to complete your purchase.</h5>
+                <h5 className="css-czik8g">
+                  Sign up to complete your purchase.
+                </h5>
                 <div className="css-1tx38fa css-k008qs">
                   <div
                     className="css-of0vry css-cgq59l css-1imlk2a
@@ -140,7 +135,7 @@ function Login() {
                       required=""
                       onChange={inputChanged}
                     />
-                    <label className="css-1dv1kvn" htmlFor="register-email" >
+                    <label className="css-1dv1kvn" htmlFor="register-email">
                       Email
                     </label>
                     <input
@@ -155,8 +150,16 @@ function Login() {
                     <label className="css-1dv1kvn" htmlFor="register-password">
                       Password
                     </label>
-                    <button className="css-1uttnpt" type="submit"
-                     onClick= {(event) => {validateEmail(document.getElementById("email-phone-signup").value, event)}}>
+                    <button
+                      className="css-1uttnpt"
+                      type="submit"
+                      onClick={(event) => {
+                        validateEmail(
+                          document.getElementById("email-phone-signup").value,
+                          event
+                        );
+                      }}
+                    >
                       Sign up
                     </button>
                   </form>
@@ -520,11 +523,19 @@ function Login() {
                     id="login-password"
                     onChange={inputChanged}
                   />
-                  <label className="css-1dv1kvn" htmlFor="login-password" >
+                  <label className="css-1dv1kvn" htmlFor="login-password">
                     Login
                   </label>
-                  <button className="css-1uttnpt" type="submit" 
-                   onClick= {(event) => {validateEmail(document.getElementById("email-phone-login").value, event)}}>
+                  <button
+                    className="css-1uttnpt"
+                    type="submit"
+                    onClick={(event) => {
+                      validateEmail(
+                        document.getElementById("email-phone-login").value,
+                        event
+                      );
+                    }}
+                  >
                     Login
                   </button>
                 </form>
@@ -555,7 +566,8 @@ function Login() {
             <div className="css-1ruxp1v">
               <h3 className="css-ftnw2w">Send Reset Email</h3>
               <p className="css-11qftio">
-                Enter your account email/phone below to recieve reset instructions
+                Enter your account email/phone below to recieve reset
+                instructions
               </p>
               <div
                 className="css-cgq59l

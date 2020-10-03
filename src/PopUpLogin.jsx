@@ -1,14 +1,10 @@
-import React  from "react";
+import React from "react";
 
 function PopUpLogin() {
-
-
-
   return (
     <div>
       <div className="css-l8s3ml css-1h3wlde css-jp51mf" id="pop-up-login">
         <div className="css-1ruxp1v">
-          
           <form
             className="css-of0vry css-cgq59l css-k008qs"
             data-private="true"
@@ -37,9 +33,8 @@ function PopUpLogin() {
           </form>
         </div>
         <div className="css-zcxndt css-1tyndxa css-k008qs">
-        
-           <a className="css-1lr543i">Sign Up!</a>
-           &nbsp;
+          <a className="css-1lr543i">Sign Up!</a>
+          &nbsp;
           <a className="css-1lr543i">Forgot password?</a>
         </div>
       </div>

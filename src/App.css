@@ -1,107 +1,96 @@
-*{
-  margin:0;
+* {
+  margin: 0;
 }
 
-.App{
+.App {
   background-color: #fff;
 }
 
-.hard-margin{
-  margin-top:5em;
+.hard-margin {
+  margin-top: 5em;
 }
 
-.logo-thea{
-  height:40px;
-  padding-left:10%;
-  padding-right:10%;
-  background-color:rgba(0, 0, 0, 0.8);
+.logo-thea {
+  height: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-hr{
-  margin:0 !important;
+hr {
+  margin: 0 !important;
   border: 0;
- border-top: 1px solid rgba(0,0,0,1);
+  border-top: 1px solid rgba(0, 0, 0, 1);
 }
 
-.wish-list{
+.wish-list {
   margin-left: 27%;
-
 }
 
-
-#navbar-item-text{
-  font-size:12px;
+#navbar-item-text {
+  font-size: 12px;
   font-weight: bold;
 }
 
-#search-wrapper{
-  width:550px;
+#search-wrapper {
+  width: 550px;
 }
 
-#search-box{
-  width:490px;
+#search-box {
+  width: 490px;
   border-radius: 0;
 }
 
-
-#dropdown-container{
-  margin-top:12px;
+#dropdown-container {
+  margin-top: 12px;
 }
 
-#dropdown-button{
-  border-radius:0;
+#dropdown-button {
+  border-radius: 0;
   margin-top: -4px;
 }
 
-.carousel-container-wide{
- width:100%;
-
+.carousel-container-wide {
+  width: 100%;
 }
 
-
-#carousel-image-fixed{
-  height:auto;
-  width:100%;
+#carousel-image-fixed {
+  height: auto;
+  width: 100%;
 }
 
 #carousel-text {
   color: white;
   font-size: 2rem;
-  
-  
 }
 
-
-@media screen and (max-width: 576px){
-  .carousel-container-wide{
+@media screen and (max-width: 576px) {
+  .carousel-container-wide {
     width: auto;
     margin-top: 21%;
-    margin-left:0;
-   }
-   
-   #carousel-image-fixed{
-    height:auto;
-    width:100%;
+    margin-left: 0;
   }
 
-
-
- 
+  #carousel-image-fixed {
+    height: auto;
+    width: 100%;
+  }
 }
 
-.border-bottom{
+.border-bottom {
   border-bottom: 1px solid black;
 }
 
-#carousel-header{
+#carousel-header {
   margin-top: 10%;
-  margin-bottom:10%;
+  margin-bottom: 10%;
 }
 
 .text-banner-container {
   width: 100%;
 }
 
-.text-banner-subtitle, .text-banner-title {
+.text-banner-subtitle,
+.text-banner-title {
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -110,7 +99,7 @@ hr{
 .text-banner-title {
   text-transform: uppercase;
   color: #3e4152;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   font-size: 1.8em;
   margin-left: 100px;
   margin-top: 0px;
@@ -125,37 +114,35 @@ hr{
   color: #7e818c;
   margin-bottom: 50px;
 }
-#card-image-custom{
-  height:300px;
+#card-image-custom {
+  height: 300px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .text-banner-title {
     text-transform: uppercase;
     color: #3e4152;
-    
+
     letter-spacing: 1px;
-    font-size: 1em; 
+    font-size: 1em;
     margin-left: 10px;
     margin-top: 0px;
     max-height: 5em;
-    
-  }   
-  #card-image-custom{
+  }
+  #card-image-custom {
     height: 210px;
     width: 140px;
   }
 }
 
-#pop-up-login{
- 
-    position:absolute;
-    margin-left:75%;
-    margin-top:5%;
-    border:1px solid black;
-    z-index:1;
-    border-radius:0 !important;
-    width:300px;
-    padding:5px;
-    box-shadow: 2px 1px grey;
+#pop-up-login {
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 5%;
+  border: 1px solid black;
+  z-index: 1;
+  border-radius: 0 !important;
+  width: 300px;
+  padding: 5px;
+  box-shadow: 2px 1px grey;
 }
