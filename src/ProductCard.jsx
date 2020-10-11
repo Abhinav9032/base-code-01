@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ProductCard.css";
 import APP_CONSTANTS from "./Constants";
+import ProductBlock from './ProductBlock';
 
 function ProductCard(props) {
   const [imageDetails, setImageDetails] = useState([]);
@@ -35,8 +36,11 @@ function ProductCard(props) {
   }, [imageDetails.length]);
 
   return (
-    <div className="container">
-      <div className="row">{productItemList}</div>
+    <div className="container" id="product-container">
+     {/* <div className="row">{productItemList}</div> */} 
+     <div className="row">
+     <ProductBlock type={props.blockType} imgs={props.imgs}/>
+     </div>
     </div>
   );
 }

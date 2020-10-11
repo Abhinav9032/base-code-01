@@ -1,0 +1,95 @@
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+}
+
+@media (min-width: 600px)
+{
+.MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+}
+}
+
+
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.jss2299 {
+    color: #929391;
+    padding: 9px 0 2px 0;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.jss2298 {
+    border-radius: 2px;
+}
+
+
+@media (min-width: 600px)
+{
+.jss2306 {
+    font-size: 14px;
+}
+}
+
+
+
+@media (min-width: 0px)
+{
+.jss2306 {
+    font-size: 12px;
+}
+}
+
+
+@media (min-width: 600px)
+{
+.jss2300 {
+    font-size: 18px;
+}
+}
+
+
+
+.jss2300 {
+    color: #000000;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: normal;
+}
+
+.jss2307 {
+    text-align: center;
+}
+
+#product-block-custom{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap !important;
+}
+
+@media (max-width: 600px){
+    #product-block-custom{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap !important;
+    }
+}
+
+
+.imageTopBlock{
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 450px;
+    width: 300px;
+    transition: all .2s ease-in-out;
+
+    padding: 10px;
+}

@@ -1,0 +1,34 @@
+.splash-screen-container{
+    display: flex;
+    height: 100vh;
+    background-color: rgba(190, 189, 104, 0.7);
+}
+
+.splash-image{
+        width: auto;  
+        height: 90vh; 
+        margin: auto;  
+        box-shadow: 5px 4px 12px -5px black;
+}
+
+.splash-screen-banner{
+    padding:10px;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    background-color: rgba(0,0,0,0.5);
+   
+}
+
+@media(max-width: 600px){
+    .splash-screen-banner{
+        top: 32%;
+    font-size: 10px;
+    left: 12%;
+    }
+    .splash-screen-banner>h1{
+        font-size:1.2rem;
+    }
+}
