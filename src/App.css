@@ -66,7 +66,6 @@ hr {
 @media screen and (max-width: 576px) {
   .carousel-container-wide {
     width: auto;
-    margin-top: 21%;
     margin-left: 0;
   }
 
@@ -122,16 +121,19 @@ hr {
   .text-banner-title {
     text-transform: uppercase;
     color: #3e4152;
-
     letter-spacing: 1px;
-    font-size: 1em;
-    margin-left: 10px;
+    font-size: 1.5em;
     margin-top: 0px;
     max-height: 5em;
+    margin-left: 1%;
+    border-top: 1px solid rgb(236, 237, 235);
   }
   #card-image-custom {
     height: 210px;
     width: 140px;
+  }
+  hr{
+    display:none;
   }
 }
 
@@ -150,4 +152,16 @@ hr {
 
 .hard-margin-top{
   margin-top:6%;
+}
+
+
+@media(max-width:600px){
+  .navbar-mobile-hide{
+      display:none;
+  }
+}
+
+
+.mobile-view-menu-item{
+  border-bottom:1px solid black;
 }

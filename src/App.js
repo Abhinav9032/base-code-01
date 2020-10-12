@@ -11,7 +11,8 @@ import FooterComponent from "./FooterComponent";
 import DetailedProductView from './DetailedProductView';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SplashScreen from './SplashScreen'
+import SplashScreen from './SplashScreen';
+import Category from './Category';
 
 
 import img1 from './images/blockProductImage/blockimageTop1.webp';
@@ -94,8 +95,8 @@ return(
             <DetailedProductView/>
           </Route>
           <Route path="/">
-          <button className="hard-margin-top" onClick={clickHandler}>Click</button>
-           {/* <Carousel />
+          <Category/>
+           <Carousel />
             <hr />
             
             <Section title="Deals Of The Day" />
@@ -107,7 +108,7 @@ return(
             <Section title="Trending This season" />
             <ProductCard blockType={'bottom'} imgs={imgBottom}/>
             <hr/>
-          
+          {/*
            <Section title="Top Trending of the Week"/>
            <ProductCard variant="top-trending-of-week"/>
            <Section title="Handpicked for you"/>

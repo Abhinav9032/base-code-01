@@ -57,24 +57,70 @@ export default class DetailedProductView extends Component {
           <div className="fluid__instructions" style={{ position: "relative" }}>
             <div id="portal" className="portal" />
             <div className="product-detail-info-container">
-              <a href="#" className="brand-detail">
-                Brand : Reebok
-              </a>
+            <main className="col-lg-6" id="desc-box">
+					<article>
+						<a href="#" className="text-primary btn-link">Clothes</a>
+						<h3 className="product-name">Winter Boots Leather for Men</h3>
+						<div>
+							<ul className="rating-stars">
+								<li  className="stars-active">
+									<img src="bootstrap-ecommerce-html/images/icons/stars-active.svg" alt="⭐️"/>
+								</li>
+								<li>
+									<img src="bootstrap-ecommerce-html/images/icons/starts-disable.svg" alt=""/>
+								</li>
+							</ul>
+							<span className="label-rating mr-3 text-muted">7/10</span>
+							<a href="#" className="btn-link  mr-3 text-muted"> <i className="fa fa-heart"></i> Save for later </a>
+							<a href="#" className="btn-link text-muted"> <i className="fa fa-book-open"></i> Compare </a>
+						</div> 
 
-              <h4>Designer Kurtis by W</h4>
+						<hr/>
+			
+						<div className="mb-3">
+							<h6>Short description</h6>
+							<ul className="list-dots mb-0">
+								<li>Made in Russia</li>
+								<li>Wolf leather </li>
+								<li>Rubber material bottom</li>
+								<li>Dark blue color</li>
+							</ul>
+						</div>
+						
+						<div className="form-group">
+							<label className="text-muted">Available sizes</label>
+							<div>
+								<label className="js-check btn btn-check active">
+									<input type="radio" name="option_size" value="option1" checked=""/>
+									<span>Small</span>
+								</label>
+								<label className="js-check btn btn-check">
+									<input type="radio" name="option_size" value="option1"/>
+									<span>Medium</span>
+								</label>
+								<label className="js-check btn btn-check">
+									<input type="radio" name="option_size" value="option1"/>
+									<span>Large</span>
+								</label>
+								<label className="js-check btn btn-check disabled">
+									<input type="radio" name="option_size" disabled="" value="option1"/>
+									<span>Babies</span>
+								</label>	
+							</div>						
+						</div>
 
-              <div className="star-with-user-count">
-                <ul className="rating-container">
-                  <Stars stars={5} />
-                </ul>
-                <span className="rating-count">9 ratings</span>
-              </div>
+						<div className="mb-3">
+							<var className="price h4">$230.00</var> <br/>
+							<span className="monthly">$32.00 / monthly <a href="#" className="btn-link">installment </a></span>
+						</div> 
 
-
-              <div className="mrp-display">MRP: <span className="mrp-striker">&#8377;2399.00</span></div>
-              <div className="price-display">Price: <span className="price-highlighter">&#8377;2399.00</span></div>
-              <div className="price-display">You Save: <span className="price-highlighter">&#8377;2399.00 (5%)</span></div>
-              <p>Inclusive of all taxes</p>
+						<div className="mb-4">
+							<a href="#" className="btn btn-primary">Buy now</a>
+							<a href="#" className="btn btn-light">Add to card</a>
+						</div>
+						
+					</article> 
+				</main>
 
             </div>
           </div>
@@ -90,7 +136,7 @@ const Stars = (starsRating) => {
   let li = [];
 
   while (s-- > 0) {
-    li.push(<i class="fa fa-star" aria-hidden="true"></i>);
+    li.push(<i className="fa fa-star" aria-hidden="true"></i>);
   }
   return li.map((item) => <li className="star-rating">⭐️</li>);
 };

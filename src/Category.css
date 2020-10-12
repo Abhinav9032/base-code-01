@@ -1,0 +1,34 @@
+.category-row-container{
+    padding-top:22%;
+    display:flex;
+    overflow-x: auto;
+}
+
+.category-logo{
+    margin-left:10px;
+    margin-right:10px;
+    
+}
+
+.category-image{
+height:100px;
+width:100px;
+border-radius:50%;
+border-right: 1px solid black;
+}
+
+.category-name{
+    text-align:center;
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+.category-row-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media(min-width:600px){
+    .category-row-container{
+        display:none;
+    }
+}
