@@ -64,7 +64,7 @@ function App() {
 
 
   const  clickHandler = () => {
-    console.log('Heyt you clicked me bro');
+    console.log('Hey you clicked me bro');
     const url = 'https://secureservice-env.eba-mpkiqwp5.ap-south-1.elasticbeanstalk.com/get';
     fetch(url)
     .then((res) => res.json())

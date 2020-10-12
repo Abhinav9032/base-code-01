@@ -241,7 +241,7 @@ function Navbar(props) {
         </div>
 
 
-        <a id="header-cart-icon" className="header-icon" href="/checkout/cart">
+        <a id="header-cart-icon" className="header-icon" href="/login">
             <svg viewBox="0 0 24 24">
                 <path fill="#3E4152" fillrule="evenodd" d="M4.012
                                 20.718L5.246 7.314H7.27v1.763a.733.733 0 101.466

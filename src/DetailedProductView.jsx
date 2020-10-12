@@ -3,32 +3,27 @@ import DetailedProductCarouselView from "./DetailedProductCarouselView";
 import "./DetailedProductView.css";
 import "./css/font-awesome.css";
 
-import img1 from "./images/SlickCarousel_Images/img1.webp";
-import img2 from "./images/SlickCarousel_Images/img2.jpg";
-import img3 from "./images/SlickCarousel_Images/img3.webp";
-import img4 from "./images/SlickCarousel_Images/img4.webp";
-import img5 from "./images/SlickCarousel_Images/img5.webp";
 
 const imageData = [
   {
-    small: img1,
-    large: img1,
+    small: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img1.webp',
+    large: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img1.webp',
   },
   {
-    small: img2,
-    large: img2,
+    small: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img2.jpg',
+    large: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img2.jpg',
   },
   {
-    small: img3,
-    large: img3,
+    small: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img3.webp',
+    large: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img3.webp',
   },
   {
-    small: img4,
-    large: img4,
+    small: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img4.webp',
+    large: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img4.webp',
   },
   {
-    small: img5,
-    large: img5,
+    small: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img5.webp',
+    large: 'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductDetails/img5.webp',
   },
 ];
 
