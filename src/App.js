@@ -15,17 +15,6 @@ import SplashScreen from './SplashScreen';
 import Category from './Category';
 
 
-import img1 from './images/blockProductImage/blockimageTop1.webp';
-import img2 from './images/blockProductImage/blockimageTop2.webp';
-import img3 from './images/blockProductImage/blockImageTop3.webp';
-import img4 from './images/blockProductImage/blockImagetop4.webp';
-import img5 from './images/blockProductImage/blockimageTop5.webp';
-
-import secondRowImg1 from './images/blockProductImage/blockImageSecond1.webp';
-import secondRowImg2 from './images/blockProductImage/blockImageSecond2.webp';
-import secondRowImg3 from './images/blockProductImage/blockImageSecond3.webp';
-import secondRowImg4 from './images/blockProductImage/blockImageSecond4.webp';
-import secondRowImg5 from './images/blockProductImage/blockImageSecond5.webp';
 
 
 let firstLoad = 0;
@@ -35,9 +24,19 @@ function App() {
   const [showPopUp, setShowPopUp] = useState(false);
   const [splashScreen, setSplashScreen] = useState(true);
 
-  const imgUp = [img1,img2,img3,img4,img5];
+  const imgUp = 
+  ['https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockimageTop1.webp'
+    ,'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockimageTop2.webp',
+    'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockImageTop3.webp',
+    'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockImagetop4.webp',
+    'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockimageTop5.webp'];
 
-  const imgBottom = [secondRowImg1,secondRowImg2,secondRowImg3,secondRowImg4,secondRowImg5];
+  const imgBottom = 
+  ['https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockImageSecond1.webp',
+  'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockImageSecond2.webp',
+  'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockImageSecond3.webp',
+  'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockImageSecond4.webp',
+  'https://abhinav-mishra-bucket.s3.ap-south-1.amazonaws.com/ProductBlocks/blockImageSecond5.webp'];
 
   const popUpHandler = (prevState) => {
     console.log("showPopUp called", showPopUp);
