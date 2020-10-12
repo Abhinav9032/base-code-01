@@ -36,7 +36,7 @@ const SingleProductBlock = (props) => {
         id="category_block_wrapper_0"
       >
         <a
-          href="/in/en/c/girls-tops?v=1"
+          href="/productDetails"
           class="jss1758"
           id="category_block_link_0"
         >
