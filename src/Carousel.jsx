@@ -6,11 +6,7 @@ function Carousel() {
   const [carouselItemsList, setCarouselItemsList] = useState([]);
   useEffect(() => {
     console.log("use Effect called", imageDetails);
-    const url =
-      APP_CONSTANTS.HTTP_PROTOCOL +
-      APP_CONSTANTS.LOCAL_URL +
-      APP_CONSTANTS.CAROUSEL_ENDPOINT;
-
+    const url = 'https://secureservice-env.eba-mpkiqwp5.ap-south-1.elasticbeanstalk.com/storage/getImagesForCarousel';
     console.log("URL formed -> ", url);
     fetch(url)
       .then((res) => res.json())
